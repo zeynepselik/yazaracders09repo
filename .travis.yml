@@ -3,4 +3,4 @@ script : "mvn -f yazaracders09repo/pom.xml clean install cobertura:cobertura"
 jdk:
    - openjdk8
 after_success:
--bash <(curl -s https://codecov.io/bash)
+ - bash <(curl -s https://codecov.io/bash)
